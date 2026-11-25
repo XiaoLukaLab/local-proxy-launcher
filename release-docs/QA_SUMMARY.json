@@ -1,0 +1,138 @@
+{
+  "product": "Local Proxy Launcher",
+  "version": "1.0.0-beta.1",
+  "platform": "Windows 10 x64, build 19045",
+  "clientVersionObserved": "2.35.1",
+  "nonAdministrator": true,
+  "runtime": [
+    {
+      "name": "PowerShell 5.1 语法解析",
+      "type": "真实脚本",
+      "pass": true
+    },
+    {
+      "name": "本地地址和 IPv6 标准化",
+      "type": "真实函数",
+      "pass": true
+    },
+    {
+      "name": "无效端口、远程主机、认证和注入输入被拒绝",
+      "type": "真实函数",
+      "pass": true
+    },
+    {
+      "name": "当前代理 CONNECT 和 Google TLS",
+      "type": "真实网络",
+      "pass": true
+    },
+    {
+      "name": "HTTP 服务不支持 CONNECT",
+      "type": "本机模拟 HTTP 服务",
+      "pass": true
+    },
+    {
+      "name": "关闭端口失败并有限返回",
+      "type": "真实关闭端口",
+      "pass": true
+    },
+    {
+      "name": "VPN 未开时无候选代理",
+      "type": "模拟发现层",
+      "pass": true
+    },
+    {
+      "name": "端口变化后重新选择可用代理",
+      "type": "模拟候选列表，真实代理 TLS",
+      "pass": true
+    },
+    {
+      "name": "未安装客户端",
+      "type": "模拟文件不存在",
+      "pass": true
+    },
+    {
+      "name": "旧实例拦截",
+      "type": "模拟进程列表",
+      "pass": true
+    },
+    {
+      "name": "更新中拦截及失败状态识别",
+      "type": "模拟官方日志",
+      "pass": true
+    },
+    {
+      "name": "父环境不变，子进程实际继承",
+      "type": "真实子进程",
+      "pass": true
+    },
+    {
+      "name": "重复保存配置保持字节不变，改动前备份",
+      "type": "真实临时文件",
+      "pass": true
+    },
+    {
+      "name": "同名无关快捷方式保留",
+      "type": "真实临时快捷方式",
+      "pass": true
+    }
+  ],
+  "deployment": [
+    {
+      "name": "部署失败明确返回且不显示成功",
+      "type": "真实关闭/不可用端口",
+      "pass": true
+    },
+    {
+      "name": "中文及空格解压、安装和桌面目录",
+      "type": "真实文件与真实代理",
+      "pass": true
+    },
+    {
+      "name": "重复部署无重复入口，原配置保留或备份",
+      "type": "真实部署两次；允许经验证刷新代理",
+      "pass": true
+    },
+    {
+      "name": "删除原始解压目录后桌面目标自检",
+      "type": "真实删除任务副本，不启动真实客户端",
+      "pass": true
+    },
+    {
+      "name": "白名单卸载并保留配置与未知文件",
+      "type": "真实临时安装",
+      "pass": true
+    },
+    {
+      "name": "卸载后重新部署",
+      "type": "真实重新部署",
+      "pass": true
+    },
+    {
+      "name": "手动配置经验证后保存",
+      "type": "真实代理复测",
+      "pass": false,
+      "status": "早轮通过；末轮 oauth2 TLS 超时，拒绝保存，稳定性未通过"
+    }
+  ],
+  "modelAcceptance": "用户报告既有方案可用；本轮新版重启后未独立复核",
+  "publicRelease": true,
+  "observations": {
+    "networkComparison": {
+      "systemProxyUnchanged": true,
+      "proxyEnvironmentUnchanged": true,
+      "dnsUnchanged": true,
+      "routesUnchanged": true,
+      "originalCodexProcessesStillRunning": true,
+      "nonAdministrator": true
+    },
+    "newClientStarted": true,
+    "languageServiceProxyConnectionObserved": true,
+    "fiveGoogleServicesTlsHttp": true,
+    "nativeScreenshotCapture": "FrameArrived timeout",
+    "modelReply": "未独立验收"
+  },
+  "latestNetworkLimitation": "最后复测发生上游 TLS 超时；未将全部网络验收标为通过。",
+  "baselineVersion": "1.0.0",
+  "evidenceNote": "runtime 与 deployment 为本地 V1.0.0 的历史记录，不表示改名 Beta 已全量复测。",
+  "releaseType": "Pre-release"
+}

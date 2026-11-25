@@ -1,0 +1,3 @@
+Local Proxy Launcher
+v1.0.0-beta.1
+Non-official Windows process-scoped HTTP proxy launcher.

@@ -1,0 +1,37 @@
+[
+  {
+    "Name": "PowerShell 5.1 syntax and UTF-8 BOM",
+    "Pass": true,
+    "Type": "Local release check; no live model/network test"
+  },
+  {
+    "Name": "Product version and isolated install namespace",
+    "Pass": true,
+    "Type": "Local release check; no live model/network test"
+  },
+  {
+    "Name": "Local HTTP input normalization and invalid input rejection",
+    "Pass": true,
+    "Type": "Local release check; no live model/network test"
+  },
+  {
+    "Name": "Scoped proxy settings and unchanged parent environment",
+    "Pass": true,
+    "Type": "Local release check; no live model/network test"
+  },
+  {
+    "Name": "Runtime file allowlist exists",
+    "Pass": true,
+    "Type": "Local release check; no live model/network test"
+  },
+  {
+    "Name": "Chinese space path in desktop shortcut arguments",
+    "Pass": true,
+    "Type": "Local release check; no live model/network test"
+  },
+  {
+    "Name": "Final MIT license and build gate",
+    "Pass": true,
+    "Type": "Local release check; no live model/network test"
+  }
+]
