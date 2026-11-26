@@ -1,14 +1,14 @@
 # 分享文案
 
-公开测试版 v1.0.0-beta.1，不宣称全平台或全 VPN 稳定。
+公开测试版 v1.0.0-beta.2，不宣称全平台或全 VPN 稳定。
 
 ## 微信
 
 做了一个 Windows 小工具：Local Proxy Launcher（独立代理启动器），用于让 Antigravity 通过已验证的本机 HTTP/Mixed 代理启动，目标是在 TUN 关闭时使用。中文一键部署、网络诊断和卸载，不需要 Codex，也不修改全局网络。
 
-首版 v1.0.0-beta.1，仅 Windows 10 x64 + 当前 MagicHut 环境有实测；其他 VPN、Windows 11、新入口真实模型回复仍需验证，上游可能 TLS 超时。非 Google 官方工具，不提供 VPN、账号或访问资格。
+当前为维护测试版 v1.0.0-beta.2，由小路卡 XiaoLuka（XiaoLukaLab）维护。仅 Windows 10 x64 + 当前 MagicHut 环境有实测；其他 VPN、Windows 11、新入口真实模型回复仍需验证，上游可能 TLS 超时。非 Google 官方工具，不提供 VPN、账号或访问资格。
 
-项目地址：https://github.com/a3555745/local-proxy-launcher
+项目地址：https://github.com/XiaoLukaLab/local-proxy-launcher
 
 ## 小红书
 

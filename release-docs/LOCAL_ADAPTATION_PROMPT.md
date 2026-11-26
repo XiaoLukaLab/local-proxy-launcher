@@ -1,6 +1,6 @@
 # 供其他用户用 Codex 本地适配的备用 Prompt
 
-请担任我的 Windows 网络排障与 PowerShell 工程师，在当前解压的 Local Proxy Launcher v1.0.0-beta.1 源码目录中执行以下任务。
+请担任我的 Windows 网络排障与 PowerShell 工程师，在当前解压的 Local Proxy Launcher v1.0.0-beta.2 源码目录中执行以下任务。
 
 先读取 AGENTS.md、ROADMAP.md、README.md、docs/ARCHITECTURE.md、docs/MAINTENANCE.md、COMPATIBILITY_MATRIX.md。保留已验证的进程代理逻辑，以最小必要改动适配我的电脑，不重新开发大型客户端，不安装额外未知组件。
 

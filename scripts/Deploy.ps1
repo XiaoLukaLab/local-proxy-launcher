@@ -3,7 +3,7 @@ param([string]$ProxyAddress,[string]$ExecutablePath,[switch]$NonInteractive,[swi
 . (Join-Path $PSScriptRoot 'Runtime.ps1')
 $code=1
 try {
-    Write-Host 'Local Proxy Launcher v1.0.0-beta.1｜非官方独立代理启动器'
+    Write-Host 'Local Proxy Launcher v1.0.0-beta.2｜非官方独立代理启动器'
     $os=Get-CimInstance Win32_OperatingSystem
     if([version]$os.Version -lt [version]'10.0'){throw '本版面向 Windows 10 / 11；当前系统不在支持设计范围。'}
     $curl=Join-Path ([Environment]::GetFolderPath('System')) 'curl.exe'

@@ -4,7 +4,9 @@
 
 [English](README_EN.md) · [中文离线教程](docs/使用教程.html) · [兼容性](COMPATIBILITY.md) · [安全说明](SECURITY.md)
 
-> v1.0.0-beta.1 首次公开测试版（Pre-release）。不是所有平台、所有 VPN 均兼容的稳定版本。
+> v1.0.0-beta.2 公开测试版（Pre-release），本次仅更新维护者账号、链接和发布元数据。不是所有平台、所有 VPN 均兼容的稳定版本。
+
+维护者：[小路卡 XiaoLuka / XiaoLukaLab](https://github.com/XiaoLukaLab) 。[版本发布页](https://github.com/XiaoLukaLab/local-proxy-launcher/releases/tag/v1.0.0-beta.2) 。
 
 ![连接示意图](assets/connection-flow.svg)
 
@@ -16,9 +18,9 @@
 
 ## 下载与三步开始
 
-- [Windows 用户包](https://github.com/a3555745/local-proxy-launcher/releases/download/v1.0.0-beta.1/LocalProxyLauncher-v1.0.0-beta.1-Windows.zip)
-- [源码包](https://github.com/a3555745/local-proxy-launcher/releases/download/v1.0.0-beta.1/LocalProxyLauncher-v1.0.0-beta.1-Source.zip)
-- [SHA256 校验值](https://github.com/a3555745/local-proxy-launcher/releases/download/v1.0.0-beta.1/SHA256SUMS.txt)
+- [Windows 用户包](https://github.com/XiaoLukaLab/local-proxy-launcher/releases/download/v1.0.0-beta.2/LocalProxyLauncher-v1.0.0-beta.2-Windows.zip)
+- [源码包](https://github.com/XiaoLukaLab/local-proxy-launcher/releases/download/v1.0.0-beta.2/LocalProxyLauncher-v1.0.0-beta.2-Source.zip)
+- [SHA256 校验值](https://github.com/XiaoLukaLab/local-proxy-launcher/releases/download/v1.0.0-beta.2/SHA256SUMS.txt)
 
 1. **准备：**自行安装并登录 Antigravity，打开已有的本地 HTTP/Mixed 代理；目标是在 VPN 正常开启、TUN 关闭时使用。
 2. **部署：**完整解压 Windows ZIP，双击「01 一键部署.bat」。等待明确的成功提示，不要在 ZIP 预览里运行。

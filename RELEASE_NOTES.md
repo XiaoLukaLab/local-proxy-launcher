@@ -1,6 +1,13 @@
-# Local Proxy Launcher v1.0.0-beta.1
+# Local Proxy Launcher v1.0.0-beta.2
 
-v1.0.0-beta.1 为首次公开测试版（Pre-release），采用 MIT License。
+v1.0.0-beta.2 为账号更名后的维护测试版（Pre-release），继续采用 MIT License。维护者为 [小路卡 XiaoLuka / XiaoLukaLab](https://github.com/XiaoLukaLab) 。
+
+## 本次维护变化
+
+- 仓库和 Release 下载链接统一到 XiaoLukaLab/local-proxy-launcher。
+- 更新版权署名、提交身份、中文及英文文档，重新构建 Windows / Source ZIP 与 SHA256。
+- 不新增功能，不改变代理、部署或卸载行为，不扩大测试覆盖声明。
+- 保留 beta.1 公开标签和提交历史，不移动已发布标签；新版源码与附件统一使用 beta.2。
 
 ## 主要功能
 
@@ -10,7 +17,7 @@ v1.0.0-beta.1 为首次公开测试版（Pre-release），采用 MIT License。
 
 ## 下载与安装
 
-从本版本附件下载 LocalProxyLauncher-v1.0.0-beta.1-Windows.zip，核对 SHA256SUMS.txt，完整解压并双击「01 一键部署.bat」。部署明确成功后，正常退出旧客户端，再用桌面「独立代理启动器」启动。离线说明位于 docs/使用教程.html。Source ZIP 面向维护者。
+从本版本附件下载 LocalProxyLauncher-v1.0.0-beta.2-Windows.zip，核对 SHA256SUMS.txt，完整解压并双击「01 一键部署.bat」。部署明确成功后，正常退出旧客户端，再用桌面「独立代理启动器」启动。离线说明位于 docs/使用教程.html。Source ZIP 面向维护者。
 
 ## 实际覆盖与已知问题
 

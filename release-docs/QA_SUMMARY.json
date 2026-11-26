@@ -1,6 +1,6 @@
 {
   "product": "Local Proxy Launcher",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "platform": "Windows 10 x64, build 19045",
   "clientVersionObserved": "2.35.1",
   "nonAdministrator": true,

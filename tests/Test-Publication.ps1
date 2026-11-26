@@ -7,7 +7,7 @@ Check 'PowerShell 5.1 syntax and UTF-8 BOM' {
  foreach($dir in @('scripts','tests','tools')){foreach($f in (Get-ChildItem -LiteralPath (Join-Path $script:SourceRoot $dir) -Filter '*.ps1' -File)){$t=$null;$e=$null;$null=[Management.Automation.Language.Parser]::ParseFile($f.FullName,[ref]$t,[ref]$e);if($e.Count){throw 'Syntax error'};$b=[IO.File]::ReadAllBytes($f.FullName);if($b[0] -ne 239 -or $b[1] -ne 187 -or $b[2] -ne 191){throw 'Missing BOM'}}}
 }
 Check 'Product version and isolated install namespace' {
- if($script:Version -ne '1.0.0-beta.1' -or $script:ProductId -ne 'LocalProxyLauncher' -or (Split-Path (Get-InstallRoot) -Leaf) -ne 'LocalProxyLauncher'){throw 'Metadata mismatch'}
+ if($script:Version -ne '1.0.0-beta.2' -or $script:ProductId -ne 'LocalProxyLauncher' -or (Split-Path (Get-InstallRoot) -Leaf) -ne 'LocalProxyLauncher'){throw 'Metadata mismatch'}
 }
 Check 'Local HTTP input normalization and invalid input rejection' {
  if((ConvertTo-LocalProxy 'localhost:65432') -ne 'http://localhost:65432'){throw 'Normalize failed'}
@@ -28,7 +28,7 @@ Check 'Chinese space path in desktop shortcut arguments' {
 }
 Check 'Final MIT license and build gate' {
  $license=Get-Content -LiteralPath (Join-Path $script:SourceRoot 'LICENSE') -Raw -Encoding UTF8
- if($license -notmatch 'MIT License' -or $license -notmatch 'Copyright \(c\) 2026 a3555745' -or $license -notmatch 'THE SOFTWARE IS PROVIDED'){throw 'Final MIT license invalid'}
+ if($license -notmatch 'MIT License' -or $license -notmatch 'Copyright \(c\) 2026 XiaoLukaLab' -or $license -notmatch 'THE SOFTWARE IS PROVIDED'){throw 'Final MIT license invalid'}
  if(-not(Test-Path -LiteralPath (Join-Path $script:SourceRoot 'LICENSE'))){$rejected=$false;try{& (Join-Path $script:SourceRoot 'tools\Build-Release.ps1')}catch{$rejected=$true};if(-not $rejected){throw 'Unapproved build allowed'}}
 }
 $out=Join-Path $script:SourceRoot '.tmp\publication-checks';[void](New-Item -ItemType Directory -Path $out -Force)

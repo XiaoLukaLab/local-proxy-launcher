@@ -1,5 +1,11 @@
 # 版本记录
 
+## v1.0.0-beta.2 -- 2026-11-26
+
+- 维护者更新为 XiaoLukaLab（小路卡 XiaoLuka），仓库、下载地址、版权署名及提交身份同步更新。
+- 重新构建 Windows / Source ZIP、文件清单和 SHA256，继续按 MIT 与既有 47 文件白名单发布 Pre-release。
+- 不新增功能，保留 beta.1 标签与提交历史，不扩大 Windows、VPN 或真实模型回复的验收声明。
+
 ## v1.0.0-beta.1 -- 2026-11-26
 
 首次公开测试版（Pre-release）。

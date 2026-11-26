@@ -1,12 +1,12 @@
 ﻿param([string]$ReleaseRoot,[string]$ForbiddenPattern)
 . (Join-Path (Split-Path $PSScriptRoot -Parent) 'scripts\Runtime.ps1')
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-if(-not $ReleaseRoot){$ReleaseRoot=Join-Path $script:SourceRoot 'releases\v1.0.0-beta.1'}
+if(-not $ReleaseRoot){$ReleaseRoot=Join-Path $script:SourceRoot 'releases\v1.0.0-beta.2'}
 $work=Join-Path $script:SourceRoot ('.tmp\verify-'+[guid]::NewGuid().ToString('N'));[void](New-Item -ItemType Directory -Path $work -Force)
 $results=@()
 try{
     foreach($kind in @('Windows','Source')){
-        $zip=Join-Path $ReleaseRoot ('LocalProxyLauncher-v1.0.0-beta.1-'+$kind+'.zip');$dest=Join-Path $work $kind
+        $zip=Join-Path $ReleaseRoot ('LocalProxyLauncher-v1.0.0-beta.2-'+$kind+'.zip');$dest=Join-Path $work $kind
         [IO.Compression.ZipFile]::ExtractToDirectory($zip,$dest)
         $root=(Get-ChildItem -LiteralPath $dest -Directory)[0].FullName
         $manifest=Get-Content -LiteralPath (Join-Path $root 'FILE_MANIFEST.json') -Raw -Encoding UTF8 | ConvertFrom-Json

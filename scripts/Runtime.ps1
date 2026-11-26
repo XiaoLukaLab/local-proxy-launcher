@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 [Console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 $script:ProductId = 'LocalProxyLauncher'
-$script:Version = '1.0.0-beta.1'
+$script:Version = '1.0.0-beta.2'
 $script:SourceRoot = Split-Path $PSScriptRoot -Parent
 $script:ProxyNames = @('HTTP_PROXY','HTTPS_PROXY','ALL_PROXY','NO_PROXY')
 

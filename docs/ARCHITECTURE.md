@@ -1,4 +1,4 @@
-# v1.0.0-beta.1 架构说明
+# v1.0.0-beta.2 架构说明
 
 BAT → Entry → Deploy / App / Network / Remove → Runtime 共用函数。保留已有 ProcessStartInfo 进程代理、curl / Schannel TLS 核心，改造集中于发现与部署层。
 

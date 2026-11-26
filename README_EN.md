@@ -4,7 +4,9 @@ A non-official Windows process-scoped proxy launcher for Antigravity.
 
 [简体中文](README.md) · [Offline Chinese guide](docs/使用教程.html) · [Compatibility](COMPATIBILITY.md) · [Security](SECURITY.md)
 
-> v1.0.0-beta.1 is the first public pre-release. This is not a universally compatible stable release.
+> v1.0.0-beta.2 is a public pre-release. This maintenance update changes the maintainer identity, links and release metadata only. This is not a universally compatible stable release.
+
+Maintainer: [小路卡 XiaoLuka / XiaoLukaLab](https://github.com/XiaoLukaLab). [Release page](https://github.com/XiaoLukaLab/local-proxy-launcher/releases/tag/v1.0.0-beta.2).
 
 ## Why use it?
 
@@ -14,7 +16,7 @@ It does not include the official client, provide VPN access, accounts, quotas or
 
 ## Download and start
 
-[Windows ZIP](https://github.com/a3555745/local-proxy-launcher/releases/download/v1.0.0-beta.1/LocalProxyLauncher-v1.0.0-beta.1-Windows.zip) · [Source ZIP](https://github.com/a3555745/local-proxy-launcher/releases/download/v1.0.0-beta.1/LocalProxyLauncher-v1.0.0-beta.1-Source.zip) · [SHA256](https://github.com/a3555745/local-proxy-launcher/releases/download/v1.0.0-beta.1/SHA256SUMS.txt)
+[Windows ZIP](https://github.com/XiaoLukaLab/local-proxy-launcher/releases/download/v1.0.0-beta.2/LocalProxyLauncher-v1.0.0-beta.2-Windows.zip) · [Source ZIP](https://github.com/XiaoLukaLab/local-proxy-launcher/releases/download/v1.0.0-beta.2/LocalProxyLauncher-v1.0.0-beta.2-Source.zip) · [SHA256](https://github.com/XiaoLukaLab/local-proxy-launcher/releases/download/v1.0.0-beta.2/SHA256SUMS.txt)
 
 1. Install and sign in to Antigravity yourself, then enable an existing unauthenticated loopback HTTP/Mixed proxy. The intended setup keeps TUN off.
 2. Extract the entire Windows ZIP and double-click `01 一键部署.bat`. Wait for an explicit successful deployment message.
